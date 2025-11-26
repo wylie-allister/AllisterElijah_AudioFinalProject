@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Boundary
+  - Traffic
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Traffic
+  - Player
+  - Boundary
+  - Homes
+  - Road
+  - Effects
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background (Ground/Grass)
+    uniqueID: 2155306215
+    locked: 0
+  - name: Road
+    uniqueID: 2817559565
+    locked: 0
+  - name: Props (curbs/fences)
+    uniqueID: 3921790071
+    locked: 0
+  - name: Houses
+    uniqueID: 1372029191
+    locked: 0
+  - name: Traffic
+    uniqueID: 411497439
+    locked: 0
+  - name: Player
+    uniqueID: 674540697
+    locked: 0
+  - name: Effects
+    uniqueID: 297320847
+    locked: 0
