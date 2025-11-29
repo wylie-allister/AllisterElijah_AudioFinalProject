@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d657bd3e20ed20848bb3dccf5bf176d0, type: 3}
   m_Name: CUE_SFX_CrashRail
   m_EditorClassIdentifier: 
-  clip: {fileID: 0}
+  clip: {fileID: 8300000, guid: 4caa416988724d048b7b69f636e3d97f, type: 3}
   volume: 1
   loop: 0
   basePitch: 1
   randomSemitoneRange: 2
-  output: {fileID: 0}
+  output: {fileID: 4593573463854153388, guid: e16fb78307e25774bb56a2e8d6fc0b1e, type: 2}

@@ -1219,7 +1219,7 @@ AudioSource:
   m_GameObject: {fileID: 158923917}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 8851140374410815511, guid: e16fb78307e25774bb56a2e8d6fc0b1e, type: 2}
   m_audioClip: {fileID: 8300000, guid: f385f153f57cc444dac669e7fdf7ecfc, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -2303,6 +2303,8 @@ GameObject:
   - component: {fileID: 353359065}
   - component: {fileID: 353359066}
   - component: {fileID: 353359067}
+  - component: {fileID: 353359068}
+  - component: {fileID: 353359069}
   m_Layer: 9
   m_Name: Scooter
   m_TagString: Player
@@ -2614,6 +2616,53 @@ MonoBehaviour:
   dustIdle: {fileID: 1477453286}
   boostKey: 304
   idleMinSpeed: 0.2
+--- !u!114 &353359068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 353359048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29e52c660dc504747bbaa0ab7f168f78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  engineBaseCue: {fileID: 11400000, guid: 6dff6108d0fd74e4bb436e70a309c6aa, type: 2}
+  engineBoostCue: {fileID: 11400000, guid: 80fe42cb528eb164789dc3f44147cbe1, type: 2}
+  engineBaseSource: {fileID: 1738785725}
+  engineBoostSource: {fileID: 680942096}
+  minPitch: 0.85
+  maxPitch: 1.35
+  minVolume: 0.15
+  maxVolume: 0.8
+  speedForMax: 6
+  boostKey: 304
+  boostFade: 0.2
+--- !u!114 &353359069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 353359048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bff52754d08d0f4a9eed39b3472a65a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crashCarCue: {fileID: 11400000, guid: d8daf7d8a0ccb024ca3cee9046b0c012, type: 2}
+  crashBoundaryCue: {fileID: 11400000, guid: 1f951a663e1483f41ae68481fda90518, type: 2}
+  lowPass: {fileID: 0}
+  lightImpactThreshold: 2
+  lightImpactCutoff: 1200
+  normalCutoff: 22000
+  trafficMask:
+    serializedVersion: 2
+    m_Bits: 256
+  boundaryMask:
+    serializedVersion: 2
+    m_Bits: 1024
 --- !u!1 &376187259
 GameObject:
   m_ObjectHideFlags: 0
@@ -13813,8 +13862,8 @@ AudioSource:
   m_GameObject: {fileID: 680942094}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 4593573463854153388, guid: e16fb78307e25774bb56a2e8d6fc0b1e, type: 2}
+  m_audioClip: {fileID: 8300000, guid: cdb97167982ad824db3067869e35ff3b, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -29920,7 +29969,7 @@ MonoBehaviour:
   drumsHigh: {fileID: 11400000, guid: 7246f5fcaaae8274cb082d96450f79e3, type: 2}
   melodicA: {fileID: 11400000, guid: 7246f5fcaaae8274cb082d96450f79e3, type: 2}
   melodicB: {fileID: 0}
-  musicBus: {fileID: 0}
+  musicBus: {fileID: -8781420777736729329, guid: e16fb78307e25774bb56a2e8d6fc0b1e, type: 2}
   fadeSeconds: 1
 --- !u!4 &1726308196
 Transform:
@@ -29978,9 +30027,9 @@ AudioSource:
   m_GameObject: {fileID: 1738785723}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 0
+  OutputAudioMixerGroup: {fileID: 4593573463854153388, guid: e16fb78307e25774bb56a2e8d6fc0b1e, type: 2}
+  m_audioClip: {fileID: 8300000, guid: cdb97167982ad824db3067869e35ff3b, type: 3}
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
