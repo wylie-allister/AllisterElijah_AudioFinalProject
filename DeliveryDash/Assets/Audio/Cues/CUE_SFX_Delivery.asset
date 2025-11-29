@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d657bd3e20ed20848bb3dccf5bf176d0, type: 3}
   m_Name: CUE_SFX_Delivery
   m_EditorClassIdentifier: 
-  clip: {fileID: 0}
+  clip: {fileID: 8300000, guid: 4c03441f5d555ba4db96fd60b5af3847, type: 3}
   volume: 1
   loop: 0
   basePitch: 1
-  randomSemitoneRange: 0
+  randomSemitoneRange: 1
   output: {fileID: 4593573463854153388, guid: e16fb78307e25774bb56a2e8d6fc0b1e, type: 2}

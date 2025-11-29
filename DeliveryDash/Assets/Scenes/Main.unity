@@ -1774,6 +1774,7 @@ MonoBehaviour:
   deliveryManager: {fileID: 103335151}
   deliverKey: 13
   acceptKeypadEnter: 1
+  CUE_SFX_Delivery: {fileID: 11400000, guid: c7fa741cebb8ad04486664c09b44dd3e, type: 2}
 --- !u!1 &262239586
 GameObject:
   m_ObjectHideFlags: 0
@@ -11983,6 +11984,7 @@ MonoBehaviour:
   deliveryManager: {fileID: 103335151}
   deliverKey: 13
   acceptKeypadEnter: 1
+  CUE_SFX_Delivery: {fileID: 11400000, guid: c7fa741cebb8ad04486664c09b44dd3e, type: 2}
 --- !u!4 &518665077 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5942124084710859871, guid: 9b714219159df489c8eb9117bfc4646c, type: 3}

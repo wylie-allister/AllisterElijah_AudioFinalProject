@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d657bd3e20ed20848bb3dccf5bf176d0, type: 3}
   m_Name: CUE_SFX_Horn
   m_EditorClassIdentifier: 
-  clip: {fileID: 0}
+  clip: {fileID: 8300000, guid: 27b42f930742b3b4a8795f83e0e6812d, type: 3}
   volume: 1
   loop: 0
   basePitch: 1

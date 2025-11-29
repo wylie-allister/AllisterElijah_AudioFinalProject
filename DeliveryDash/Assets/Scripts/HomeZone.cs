@@ -20,6 +20,9 @@ public class HomeZone : MonoBehaviour
     [Tooltip("Also accept keypad Enter.")]
     [SerializeField] private bool acceptKeypadEnter = true;
 
+    [Header("SFX Delivery")]
+    [SerializeField] public AudioCue CUE_SFX_Delivery;
+
     private bool playerInside = false;
 
     void OnTriggerEnter2D(Collider2D other)
@@ -53,6 +56,7 @@ public class HomeZone : MonoBehaviour
         {
             Debug.Log($"[HomeZone:{name}] Delivery CONFIRMED (Enter pressed).");
             deliveryManager.RegisterDelivery(); // +50 points, HUD update, 5s message handled by DeliveryManager
+            AudioManager.Instance.Play2D(CUE_SFX_Delivery);
         }
     }
 }
