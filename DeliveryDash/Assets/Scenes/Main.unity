@@ -592,6 +592,7 @@ GameObject:
   - component: {fileID: 103335152}
   - component: {fileID: 103335153}
   - component: {fileID: 103335154}
+  - component: {fileID: 103335155}
   m_Layer: 0
   m_Name: Systems
   m_TagString: Untagged
@@ -725,6 +726,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spill: {fileID: 103335153}
+--- !u!114 &103335155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 103335148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b941945b3c21df448eaaf85cb582886, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  music: {fileID: 1726308195}
+  totalTime: 60
+  timeLeft: 60
+  addDrumsHighAt: 30
+  addMelodicBAt: 20
+  fullBlastAt: 10
 --- !u!1 &125994043
 GameObject:
   m_ObjectHideFlags: 0
@@ -30097,6 +30116,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1726308196}
   - component: {fileID: 1726308195}
+  - component: {fileID: 1726308197}
   m_Layer: 0
   m_Name: Music
   m_TagString: Untagged
@@ -30117,8 +30137,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   drumsLow: {fileID: 11400000, guid: 7246f5fcaaae8274cb082d96450f79e3, type: 2}
-  drumsHigh: {fileID: 11400000, guid: 7246f5fcaaae8274cb082d96450f79e3, type: 2}
-  melodicA: {fileID: 11400000, guid: 7246f5fcaaae8274cb082d96450f79e3, type: 2}
+  drumsHigh: {fileID: 0}
+  melodicA: {fileID: 11400000, guid: 469c1df609673a9438d3374516cd6aa6, type: 2}
   melodicB: {fileID: 0}
   musicBus: {fileID: -8781420777736729329, guid: e16fb78307e25774bb56a2e8d6fc0b1e, type: 2}
   fadeSeconds: 1
@@ -30137,6 +30157,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1726308197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1726308194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 238775861dc606540bb7621942497c40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  music: {fileID: 1726308195}
 --- !u!1 &1738785723
 GameObject:
   m_ObjectHideFlags: 0
