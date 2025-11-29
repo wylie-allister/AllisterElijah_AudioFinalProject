@@ -2432,6 +2432,7 @@ MonoBehaviour:
   baseScale: {x: 0.06, y: 0.06}
   pulseScale: 1.06
   pulseSpeed: 7
+  CUE_SFX_Horn: {fileID: 11400000, guid: a1a46ccbc9441b64794798fe5aebe377, type: 2}
 --- !u!114 &353359057
 MonoBehaviour:
   m_ObjectHideFlags: 0

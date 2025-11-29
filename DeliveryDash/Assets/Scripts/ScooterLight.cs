@@ -25,6 +25,9 @@ public class ScooterLight : MonoBehaviour
     public float pulseScale = 1.05f;   // 1.0 = no pulse
     public float pulseSpeed = 6f;
 
+    [Header("Horn")]
+    [SerializeField] public AudioCue CUE_SFX_Horn;
+
     private Transform beamTf;
 
     void Awake()
@@ -54,5 +57,11 @@ public class ScooterLight : MonoBehaviour
 
         // Scale
         beamTf.localScale = new Vector3(baseScale.x * pulse, baseScale.y * pulse, 1f);
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            AudioManager.Instance.Play2D(CUE_SFX_Horn);
+            // your existing light-beam enable here
+        }
     }
 }
