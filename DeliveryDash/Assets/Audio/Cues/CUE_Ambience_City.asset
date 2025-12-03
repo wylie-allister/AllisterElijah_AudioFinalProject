@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d657bd3e20ed20848bb3dccf5bf176d0, type: 3}
   m_Name: CUE_Ambience_City
   m_EditorClassIdentifier: 
-  clip: {fileID: 0}
-  volume: 1
+  clip: {fileID: 8300000, guid: d0e1f5734309486469b5440bf6754bad, type: 3}
+  volume: 0.8
   loop: 1
   basePitch: 1
   randomSemitoneRange: 0
