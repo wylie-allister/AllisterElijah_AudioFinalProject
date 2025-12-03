@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d657bd3e20ed20848bb3dccf5bf176d0, type: 3}
   m_Name: CUE_SFX_Horn
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: 27b42f930742b3b4a8795f83e0e6812d, type: 3}
-  volume: 1
+  clip: {fileID: 8300000, guid: c781630f865bd5c408d463a64bd2e5a3, type: 3}
+  volume: 0.8
   loop: 0
   basePitch: 1
-  randomSemitoneRange: 2
+  randomSemitoneRange: 1
   output: {fileID: 4593573463854153388, guid: e16fb78307e25774bb56a2e8d6fc0b1e, type: 2}
