@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d657bd3e20ed20848bb3dccf5bf176d0, type: 3}
   m_Name: CUE_UI_Click
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: a0c46e4dae762fc448a3e52e96a75597, type: 3}
+  clip: {fileID: 8300000, guid: a90f00ef1d7a915499da27065b8835be, type: 3}
   volume: 1
   loop: 0
   basePitch: 1
