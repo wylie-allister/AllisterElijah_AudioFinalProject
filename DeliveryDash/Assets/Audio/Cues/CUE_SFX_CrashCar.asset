@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d657bd3e20ed20848bb3dccf5bf176d0, type: 3}
   m_Name: CUE_SFX_CrashCar
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: 4caa416988724d048b7b69f636e3d97f, type: 3}
-  volume: 1
+  clip: {fileID: 8300000, guid: 95e83dc73fe5d9c40b83e469886c110b, type: 3}
+  volume: 0.8
   loop: 0
   basePitch: 1
   randomSemitoneRange: 2
