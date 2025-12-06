@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class MusicIntensityDriver : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class MusicIntensityDriver : MonoBehaviour
     public float addDrumsHighAt = 30f;
     public float addMelodicBAt = 20f;
     public float fullBlastAt = 10f;
+    public bool isGO = false;
+
 
     void Start()
     {
@@ -33,23 +36,46 @@ public class MusicIntensityDriver : MonoBehaviour
 
         if (!music) return;
 
-        // Bring in DrumsHigh as time drops below threshold
-        if (timeLeft < addDrumsHighAt)
-            music.SetStemLevel("DrumsHigh", 0.7f);
-
-        // Bring in MelodicB later
-        if (timeLeft < addMelodicBAt)
-            music.SetStemLevel("MelodicB", 0.7f);
-
-        // Final push: everything strong in last seconds
-        if (timeLeft < fullBlastAt)
+        if (timeLeft <= 1f)
         {
-            music.SetStemLevel("DrumsHigh", 1.0f);
-            music.SetStemLevel("MelodicB", 1.0f);
-            // Optionally push base layers too:
-            music.SetStemLevel("DrumsLow", 1.0f);
-            music.SetStemLevel("MelodicA", 1.0f);
+            isGO = true;
         }
+
+        if (isGO == false)
+        {
+            // Bring in DrumsHigh as time drops below threshold
+            if (timeLeft < addDrumsHighAt)
+                music.SetStemLevel("DrumsHigh", 0.7f);
+
+            // Bring in MelodicB later
+            if (timeLeft < addMelodicBAt)
+                music.SetStemLevel("MelodicB", 0.7f);
+
+            // Final push: everything strong in last seconds
+            if (timeLeft < fullBlastAt)
+            {
+                music.SetStemLevel("DrumsHigh", 1.0f);
+                music.SetStemLevel("MelodicB", 1.0f);
+                // Optionally push base layers too:
+                music.SetStemLevel("DrumsLow", 1.0f);
+                music.SetStemLevel("MelodicA", 1.0f);
+            }
+        }
+        else
+        {
+            StopMusic();
+        }
+
+
+    }
+
+    public void StopMusic()
+    {
+        
+        music.SetStemLevel("DrumsLow", 0f);
+        music.SetStemLevel("DrumsHigh", 0f);
+        music.SetStemLevel("MelodicA", 0f);
+        music.SetStemLevel("MelodicB", 0f);
     }
 }
 

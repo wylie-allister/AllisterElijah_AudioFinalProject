@@ -27,7 +27,10 @@ public class GameManager : MonoBehaviour
 
     [Header("State")]
     [SerializeField] private bool isPaused = false;
-    [SerializeField] private bool isGameOver = false;
+    [SerializeField] public bool isGameOver = false;
+
+    public MusicStemController music;
+    public MenuAudioController menuAudio;
 
     void Start()
     {
@@ -42,7 +45,6 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1f;
         isPaused = false;
         isGameOver = false;
-
     }
 
     void Update()
@@ -72,6 +74,7 @@ public class GameManager : MonoBehaviour
         if (isGameOver) return; // ignore menu at game over
         SetPaused(true);
         if (pauseMenuPanel) pauseMenuPanel.SetActive(true);
+        if (menuAudio) menuAudio.OnMenuOpened();
     }
 
     /// Resume from pause.
@@ -79,6 +82,7 @@ public class GameManager : MonoBehaviour
     {
         if (pauseMenuPanel) pauseMenuPanel.SetActive(false);
         SetPaused(false);
+        if (menuAudio) menuAudio.OnMenuClosed();
     }
 
     /// Restart the current scene.

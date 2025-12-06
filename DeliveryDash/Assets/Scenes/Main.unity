@@ -620,6 +620,8 @@ MonoBehaviour:
   gameOverPanel: {fileID: 1148036531}
   isPaused: 0
   isGameOver: 0
+  music: {fileID: 1726308195}
+  menuAudio: {fileID: 2029054305}
 --- !u!4 &103335150
 Transform:
   m_ObjectHideFlags: 0
@@ -745,6 +747,7 @@ MonoBehaviour:
   addDrumsHighAt: 30
   addMelodicBAt: 20
   fullBlastAt: 10
+  isGO: 0
 --- !u!114 &103335156
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30191,9 +30194,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   drumsLow: {fileID: 11400000, guid: 7246f5fcaaae8274cb082d96450f79e3, type: 2}
-  drumsHigh: {fileID: 0}
+  drumsHigh: {fileID: 11400000, guid: 94555f390fa5cd44498ae84c7db0bf84, type: 2}
   melodicA: {fileID: 11400000, guid: 469c1df609673a9438d3374516cd6aa6, type: 2}
-  melodicB: {fileID: 0}
+  melodicB: {fileID: 11400000, guid: 3f806c7ab1893e646bcc70b269592812, type: 2}
   musicBus: {fileID: -8781420777736729329, guid: e16fb78307e25774bb56a2e8d6fc0b1e, type: 2}
   fadeSeconds: 1
 --- !u!4 &1726308196
