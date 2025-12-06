@@ -57,8 +57,8 @@ public class MusicIntensityDriver : MonoBehaviour
                 music.SetStemLevel("DrumsHigh", 1.0f);
                 music.SetStemLevel("MelodicB", 1.0f);
                 // Optionally push base layers too:
-                music.SetStemLevel("DrumsLow", 1.0f);
-                music.SetStemLevel("MelodicA", 1.0f);
+                music.SetStemLevel("DrumsLow", 0.9f);
+                music.SetStemLevel("MelodicA", 0.8f);
             }
         }
         else
@@ -74,7 +74,7 @@ public class MusicIntensityDriver : MonoBehaviour
         
         music.SetStemLevel("DrumsLow", 0f);
         music.SetStemLevel("DrumsHigh", 0f);
-        music.SetStemLevel("MelodicA", 0f);
+        music.SetStemLevel("MelodicA", 1f);
         music.SetStemLevel("MelodicB", 0f);
     }
 }
