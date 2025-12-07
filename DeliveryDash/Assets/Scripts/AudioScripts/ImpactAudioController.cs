@@ -19,11 +19,20 @@ public class ImpactAudioController : MonoBehaviour
         bool isBoundary = (boundaryMask.value & (1 << other)) != 0;
         if (isTraffic && crashCarCue) AudioManager.Instance?.PlayAt(crashCarCue, pos, 0.2f, 3f, 20f);
         if (isBoundary && crashBoundaryCue) AudioManager.Instance?.PlayAt(crashBoundaryCue, pos, 0.2f, 3f, 20f);
+        float rel = col.relativeVelocity.magnitude;
         if (lowPass) {
-            float rel = col.relativeVelocity.magnitude;
+            //float rel = col.relativeVelocity.magnitude;
             lowPass.cutoffFrequency = (rel <= lightImpactThreshold) ? lightImpactCutoff : normalCutoff;
 
+        }
 
+        var cue = (isTraffic ? crashCarCue : crashBoundaryCue);
+
+        if (cue != null)
+        {
+            // crude example thresholds; tune per project
+            if (rel < 2.0f) AudioManager.Instance?.PlayAt(cue, pos, 0.2f, 3f, 20f);               // light
+            else AudioManager.Instance?.PlayAt(cue, pos, 0.2f, 3f, 20f);               // heavy (could be a different cue)
         }
     }
 
