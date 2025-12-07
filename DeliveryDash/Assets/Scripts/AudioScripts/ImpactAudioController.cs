@@ -10,6 +10,8 @@ public class ImpactAudioController : MonoBehaviour
     public AudioLowPassFilter lowPass;
     public float lightImpactThreshold = 2f, lightImpactCutoff = 1200f, normalCutoff = 22000f;
     public LayerMask trafficMask, boundaryMask;
+    public AudioMixer mixer;
+    public string crashParam = "CrashVol_dB";
 
     void OnCollisionEnter2D(Collision2D col)
     {
@@ -31,8 +33,15 @@ public class ImpactAudioController : MonoBehaviour
         if (cue != null)
         {
             // crude example thresholds; tune per project
-            if (rel < 2.0f) AudioManager.Instance?.PlayAt(cue, pos, 0.2f, 3f, 20f);               // light
-            else AudioManager.Instance?.PlayAt(cue, pos, 0.2f, 3f, 20f);               // heavy (could be a different cue)
+            if (rel < 2.0f)
+            {
+                mixer.SetFloat(crashParam, 7f);
+            }
+            // light
+            else                // heavy (could be a different cue)
+            {
+                mixer.SetFloat(crashParam, 2f);
+            }
         }
     }
 

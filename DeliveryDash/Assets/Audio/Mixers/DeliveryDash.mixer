@@ -19,6 +19,39 @@ AudioMixerGroupController:
   m_Mute: 0
   m_Solo: 0
   m_BypassEffects: 0
+--- !u!244 &-8684901321531449653
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 5b2315c8c3975a9439ed51be0fc1ae07
+  m_EffectName: Attenuation
+  m_MixLevel: 7e392a394fcda534abda6146346f1ea4
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!243 &-7736741962622197113
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Crash
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 179be934dabc91d439f9278c72040081
+  m_Children: []
+  m_Volume: 0dc6f16e3076d704892a03b80ca1d01c
+  m_Pitch: 0636132f48dc93f42b19917944759604
+  m_Send: 00000000000000000000000000000000
+  m_Effects:
+  - {fileID: -8684901321531449653}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
 --- !u!244 &-6995791647280839079
 AudioMixerEffectController:
   m_ObjectHideFlags: 3
@@ -128,6 +161,8 @@ AudioMixerController:
   m_ExposedParameters:
   - guid: 8594b58453b09c34dbb4295ba17f9d97
     name: AmbienceVol_dB
+  - guid: 0dc6f16e3076d704892a03b80ca1d01c
+    name: CrashVol_dB
   - guid: 3d63d34866d944f4e917483c6b0fd77e
     name: MasterVol_dB
   - guid: f8bc36a4c3ecaf644a442c00d9ff872c
@@ -143,6 +178,7 @@ AudioMixerController:
     - b6f27c191a31a694b9cdb79420d57261
     - 2f9a8b7e4747b19418ffd42a55a25704
     - da38ca7dd7f5e694894073a5ba694971
+    - 179be934dabc91d439f9278c72040081
     name: View
   m_CurrentViewIndex: 0
   m_TargetSnapshot: {fileID: 24500006}
@@ -160,6 +196,7 @@ AudioMixerGroupController:
   - {fileID: 4593573463854153388}
   - {fileID: 8851140374410815511}
   - {fileID: -344097338265816830}
+  - {fileID: -7736741962622197113}
   m_Volume: 3d63d34866d944f4e917483c6b0fd77e
   m_Pitch: 046df79465591734393e61582e18eec5
   m_Send: 00000000000000000000000000000000

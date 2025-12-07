@@ -2867,6 +2867,8 @@ MonoBehaviour:
   boundaryMask:
     serializedVersion: 2
     m_Bits: 1024
+  mixer: {fileID: 24100000, guid: e16fb78307e25774bb56a2e8d6fc0b1e, type: 2}
+  crashParam: CrashVol_dB
 --- !u!169 &353359070
 AudioLowPassFilter:
   m_ObjectHideFlags: 0
@@ -2901,7 +2903,7 @@ AudioSource:
   m_GameObject: {fileID: 353359048}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 4593573463854153388, guid: e16fb78307e25774bb56a2e8d6fc0b1e, type: 2}
+  OutputAudioMixerGroup: {fileID: -7736741962622197113, guid: e16fb78307e25774bb56a2e8d6fc0b1e, type: 2}
   m_audioClip: {fileID: 8300000, guid: 95e83dc73fe5d9c40b83e469886c110b, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
